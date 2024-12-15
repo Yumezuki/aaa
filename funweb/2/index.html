@@ -15,8 +15,11 @@
         margin: 0;
       }
 
-      .score-container {
+      .box {
         width: 50%;
+      }
+
+      .score-container {
         background-color: white;
         padding: 2em;
         border-radius: 10px;
@@ -25,12 +28,13 @@
 
       .score-header {
         display: grid;
-        grid-template-columns: 15% 30% 55%;
+        grid-template-columns: 5% 32% 63%;
         font-weight: bold;
         margin-bottom: 10px;
         color: #555;
         border-bottom: 2px solid #ddd;
         padding-bottom: 20px;
+        justify-items: center;
       }
 
       .score-bar {
@@ -64,58 +68,61 @@
       .bar-fill5 { background-color: #9b59b6; width: 70%; }
 
       #order {
-        margin-left: 1em;
+        margin-left: 0.8em;
       }
     </style>
   </head>
   <body>
-    <div class="score-container">
+    <div class="box">
+      <h1>Student Scores</h1>
+      <div class="score-container">
 
       <!-- Header -->
-      <div class="score-header">
-        <div>Number</div>
-        <div>Name</div>
-        <div>Score</div>
-      </div>
-
-      <!-- Score Rows -->
-      <div class="score-bar">
-        <div id="order">1</div>
-        <div>Seishiro Nagi</div>
-        <div class="bar">
-          <div class="bar-fill bar-fill1">80%</div>
+        <div class="score-header">
+          <div>ID</div>
+          <div>Name</div>
+          <div>Score</div>
         </div>
-      </div>
 
-      <div class="score-bar">
-        <div id="order">2</div>
-        <div>Yu Nishinoya</div>
-        <div class="bar">
-          <div class="bar-fill bar-fill2">60%</div>
+        <!-- Score Rows -->
+        <div class="score-bar">
+          <div id="order">1</div>
+          <div>Nancy Freehafer</div>
+          <div class="bar">
+            <div class="bar-fill bar-fill1">80%</div>
+          </div>
         </div>
-      </div>
 
-      <div class="score-bar">
-        <div id="order">3</div>
-        <div>Gotō Hitori</div>
-        <div class="bar">
-          <div class="bar-fill bar-fill3">90%</div>
+        <div class="score-bar">
+          <div id="order">2</div>
+          <div>Andrew Cencini</div>
+          <div class="bar">
+            <div class="bar-fill bar-fill2">60%</div>
+          </div>
         </div>
-      </div>
 
-      <div class="score-bar">
-        <div id="order">4</div>
-        <div>Shuna & Yuumi</div>
-        <div class="bar">
-          <div class="bar-fill bar-fill4">50%</div>
+        <div class="score-bar">
+          <div id="order">3</div>
+          <div>Jan Kotes</div>
+          <div class="bar">
+            <div class="bar-fill bar-fill3">90%</div>
+          </div>
         </div>
-      </div>
 
-      <div class="score-bar">
-        <div id="order">5</div>
-        <div>Hinata Shoyo</div>
-        <div class="bar">
-          <div class="bar-fill bar-fill5">70%</div>
+        <div class="score-bar">
+          <div id="order">4</div>
+          <div>Mariya Sergienko</div>
+          <div class="bar">
+            <div class="bar-fill bar-fill4">50%</div>
+          </div>
+        </div>
+
+        <div class="score-bar">
+          <div id="order">5</div>
+          <div>Steven T</div>
+          <div class="bar">
+            <div class="bar-fill bar-fill5">70%</div>
+          </div>
         </div>
       </div>
     </div>
